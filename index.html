@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <h1 id="title">Hero Survey Form</h1>
+<p id="description">Help us to improve our game</p>
+
+<!-- form start -->
+
+<form id="survey-form">
+  <div class="form-control"><label id="name-label">Name:</label>
+  <input id="name" type="text" placeholder="Enter your name" required/><br></div>
+  <div class="form-control"><label id="email-label">Email:</label>
+  <input id="email" type="email" placeholder="Enter your email" required/>
+  </div>
+  <div class="form-control"><label id="email-label">Email:</label>
+  <input id="email" type="email" placeholder="Enter your email" required/></div>
+ <div class="form-control"><label id="number-label">Age:</label>
+  <input id="number" type="number" min="10" max="99" placeholder="Age"  required/></div> 
+ <div class="form-control">
+   <label for="role">Choose a role:</label>
+<select id="dropdown" name="role">
+  <option value="" disabled>Select a role</option>
+  <option value="Tank">Tank</option>
+  <option value="Support">Support</option>
+  <option value="Mage">Mage</option>
+  <option value="Fighter">Fighter</option>
+  <option value="Assasin">Assasin</option>
+  <option value="Marksman">Marksman</option>
+</select>
+ </div> 
+  
+<div class="form-control">
+            <label>
+                Would you recommend this game
+                to a friend?
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio"
+                       id="recommed-1"
+                       name="recommed""
+                       value="1">Yes</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed"
+                       value="2">No</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio"
+                       id="recommed-3"
+                       name="recommed"
+                       value="3">Maybe</input>
+            </label>
+        </div>
+<!-- check box -->
+<div class="form-control">
+  <label for="spell">Which spell you use?</label>
+  <label>
+    <input type="checkbox" value="Retribution">Retribution</input>
+    <input type="checkbox" value="Vengeance">Vengeance</input>
+    <input type="checkbox" value="Inspire">Inspire</input>
+    <input type="checkbox" value="Sprint">Sprint</input>
+    <input type="checkbox" value="Excute">Excute</input>
+  </label>
+</div>
+
+<!-- textarea -->
+<div class="form-control">
+  <label for="suggest">Any suggestions?</label>
+  <textarea name="comment" id="comment" placeholder="Your suggestions"></textarea>
+</div>
+<!-- button -->
+<button type="submit" id="submit">Submit</button>
+</form>
+<!-- form end -->
+</body>
